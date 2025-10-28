@@ -7,16 +7,29 @@
     font-family: "Prompt", sans-serif;
 }
 
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    transform-origin: top center;
+    transform: scale(0.8);
+}
+
 .hero {
-    background: linear-gradient(135deg, #1a237e, #3949ab);
-    color: #fff;
-    text-align: center;
-   
-    padding: 80px 20px;
+  background-image: url('https://raw.githubusercontent.com/JAOBOSSTH/WOTC/0d432e8a86408b88288a0c4cd988e5e2df97d08c/Bannerbg.png');
+  background-size: cover;
+  background-position: center 80%;
+  background-repeat: no-repeat;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
 }
 
 .hero h1 {
-    font-size: 48px;
+    font-size: 44px;
     font-weight: 700;
 }
 
@@ -30,14 +43,27 @@
 }
 
 .link {
-    display: inline-block;
-    margin-top: 20px;
-    background: #c5cae9;
-    color: #000;
-    padding: 8px 16px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 14px;
+  display: inline-block;
+  margin-top: 20px;
+  background: linear-gradient(145deg, #d1d6f5, #9fa8da); /* ไล่เฉดฟ้าอมม่วง */
+  color: #ffecec;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25),
+  inset 0 2px 3px rgba(255, 255, 255, 0.4);
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.7);
+  transition: all 0.25s ease;
+}
+
+
+.link:hover {
+  background: linear-gradient(145deg, #b3b8e0, #7986cb); /* เฉดเข้มขึ้น */
+  transform: translateY(-3px); /* ยกขึ้นเล็กน้อย */
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.25), inset 0 2px 3px rgba(255, 255, 255, 0.3);
 }
 
 .intro-section {
@@ -57,6 +83,12 @@
 
 .intro-img img {
     width: 100px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.intro-img img:hover {
+    transform: scale(1.1) rotate(-2deg);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
 }
 
 .intro-img h3 {
