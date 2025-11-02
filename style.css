@@ -14,20 +14,6 @@
     transform-origin: top center;
 }
 
-@media (max-width: 768px) {
-    .container {
-        width: 95%;
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        width: 100%;
-        padding: 0 10px;
-    }
-}
-
-/* HERO */
 .hero {
   background-image: url('https://raw.githubusercontent.com/JAOBOSSTH/WOTC/0d432e8a86408b88288a0c4cd988e5e2df97d08c/Bannerbg.png');
   background-size: cover;
@@ -90,14 +76,13 @@
   box-shadow: 0 8px 15px rgba(0,0,0,0.25), inset 0 2px 3px rgba(255,255,255,0.3);
 }
 
-/* INTRO SECTION */
 .intro-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
     gap: 50px;
-    padding: 60px 10%;
+    padding: 40px 8%;
     background: linear-gradient(135deg, #f9f9f9, #e3f2fd);
     box-shadow: 0 8px 20px rgba(0,0,0,0.05);
 }
@@ -152,8 +137,8 @@
 
 .intro-text h4 {
     font-size: 16px;
-    line-height: 1.7;
-    margin-bottom: 20px;
+    line-height: 1.8;
+    margin-bottom: 18px;
     color: #333;
 }
 
@@ -164,22 +149,16 @@
     margin-bottom: 18px;
     color: #333;
     text-indent: 2em;
+    word-break: break-word;
 }
 
 .menu-grid {
-     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px 40px; /* row-gap column-gap */
-    padding: 60px 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 60px 8%;
     background: #f9f9f9;
-}
-
-.menu-grid .card:nth-child(4) {
-    margin-left: 150px;
-}
-
-.menu-grid .card:nth-child(5) {
-    margin-left: 140px;
 }
 
 .card {
@@ -189,8 +168,8 @@
     padding: 25px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 100%;
-    max-width: 280px;
+    width: calc(20% - 16px);
+    min-width: 150px;
 }
 
 .card:hover {
@@ -215,9 +194,29 @@
     color: #555;
 }
 
+.img-box {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 180px;
+  border-radius: 12px;
+}
+
+@media (max-width: 1024px) {
+    .card {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
+
 footer {
     text-align: center;
-    padding: 20px 10%;
+    padding: 20px 8%;
     font-size: 13px;
     color: #fff;
     background: linear-gradient(135deg, #3949ab, #5c6bc0);
