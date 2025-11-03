@@ -315,8 +315,8 @@ footer a:hover {
 
 .accordion-text p {
   font-size: 15px;
-  line-height: 1.8;
-  margin-bottom: 10px;
+  line-height: 2;
+  margin-bottom: 14px;
   color: #333;
 }
 
@@ -325,6 +325,7 @@ footer a:hover {
 }
 
 .accordion-text li {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
+  line-height: 1.9;
   color: #444;
 }
