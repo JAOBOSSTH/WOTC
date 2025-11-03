@@ -7,14 +7,24 @@
     font-family: "Prompt", sans-serif;
 }
 
+html, body {
+  -webkit-text-size-adjust: none;
+  width: 1280px;
+  overflow-x: auto;
+}
+
+img {
+  max-width: none;
+  height: auto;
+}
+
 a {
     text-decoration: none !important;
     color: inherit !important;
 }
 
 .container {
-    width: 90%;
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
@@ -200,19 +210,20 @@ a.link:hover {
   transform: scale(1.05);
 }
 
-@media (max-width: 1024px) {
-  .menu-grid {
-    grid-template-columns: repeat(3, 1fr);
+@media (max-width: 1280px) {
+  body {
+    zoom: 0.8;
+    transform-origin: top center;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1024px), (max-width: 600px) {
   .menu-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(5, 1fr) !important;
   }
   .menu-grid .card {
-    width: 85%;
-    height: auto;
+    width: 220px !important;
+    height: 300px !important;
   }
 }
 
