@@ -7,12 +7,6 @@
     font-family: "Prompt", sans-serif;
 }
 
-/*html, body {
-  -webkit-text-size-adjust: none;
-  width: 1280px;
-  overflow-x: auto;
-}*/
-
 img {
   max-width: none;
   height: auto;
@@ -166,7 +160,7 @@ a.link:hover {
   justify-items: center;
   padding: 60px 0;
   width: 95%;
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
